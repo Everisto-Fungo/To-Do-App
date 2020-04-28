@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TO-Do-App</title>
+
+    <link rel="icon" href="favicon.png">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body >
+
+    <div class="full-container ">
+
+    <header class="header">
+        <div class="container">
+            <h1 class="headder__title">To-do App</h1>
+            <h2 class="headder__subtitle">What do you need to do?</h2>
+        </div>
+    </header>
+
+    <div class="actions">
+        <div class="actions__container">
+            <input type="text" class="input" placeholder="Search Task">
+
+            <label for="b" class="input"><input id="hideCompleted" type="checkbox"> Hide Completed </label>
+        
+        </div>
+    </div>
+   
+    <div class="container">
+        <h2 class="summary list-title"></h2>
+        <div id="actualList"></div>
+    
+    
+        <form action="" id="form-name">
+           <input type="text" placeholder="input task" name="taskTitle" class="input"> 
+           <button id="addTask" class="button">Add Task</button>
+        </form>
+
+    </div>
+
+  
+</div>
+
+
+<script src="./library/particles.js"></script>
+<script src="./library/app.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <script src="uuid.js"></script>
+    <script src="todo-function.js"></script>
+    <script src="toDoApp.js"></script>
+</body>
+</html>
